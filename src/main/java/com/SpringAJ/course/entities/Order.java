@@ -22,7 +22,6 @@ import jakarta.persistence.Table;
 @Table(name = "tb_order")
 public class Order implements Serializable {
 	
-
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -86,8 +85,6 @@ public class Order implements Serializable {
 		this.client = client;
 	}
 
-
-	
 	public Set<OrderItem> getItems() {
 		return items;
 	}
